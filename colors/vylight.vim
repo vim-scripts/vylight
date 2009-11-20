@@ -2,8 +2,8 @@
 " Vim colour file
 "
 " Maintainer:  Vy-Shane Sin Fat <shane@node.mu>
-" Last Change: 11 March 2009
-" Version:     1.0
+" Last Change: 20 November 2009
+" Version:     1.1
 "
 " This colour file is meant for GUI use.
 "
@@ -22,9 +22,9 @@ hi Cursor        guibg=#111111
 hi LineNr        guifg=#aaaaaa  guibg=#f8f8f8
 hi Visual        guibg=#bbddff
 hi NonText       guifg=#cccccc  guibg=#fafafa
-hi StatusLine    guifg=#333333  guibg=#eeeeee  gui=none
+hi StatusLine    guifg=#222222  guibg=#eeeeee  gui=none
 hi StatusLineNC  guifg=#666666  guibg=#eeeeee  gui=none
-hi VertSplit     guifg=#333333  guibg=#eeeeee  gui=none
+hi VertSplit     guifg=#eeeeee  guibg=#eeeeee  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none
@@ -46,7 +46,7 @@ endif
 " Syntax highlighting 
 hi Comment       guifg=#668866  gui=none
 "hi Todo          guifg=#225522  guibg=white    gui=italic
-hi Todo          guifg=#446644  guibg=#ddeecc  gui=none
+hi Todo          guifg=#446644  guibg=#ddeecc  gui=italic
 hi Operator      guifg=#1a1a1a  gui=none
 hi Identifier    guifg=#1a1a1a  gui=none
 hi Statement     guifg=#0050b0  gui=none
