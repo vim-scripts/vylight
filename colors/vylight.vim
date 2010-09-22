@@ -2,7 +2,7 @@
 " Vim colour file
 "
 " Maintainer:  Vy-Shane Sin Fat <shane@node.mu>
-" Last Change: 20 November 2009
+" Last Change: 8 April 2010
 " Version:     1.1
 "
 " This colour file is meant for GUI use.
@@ -16,18 +16,27 @@ endif
 let g:colors_name="vylight"
 
 
+" Highlight lines with more than 80 characters.
+augroup highlight_autocmds
+    au!
+    autocmd BufRead * highlight OverLength guibg=#f6f6f6
+    autocmd BufRead * match OverLength /\%81v.*/
+augroup END
+
+
 hi Normal        guifg=#1a1a1a  guibg=white
 hi Title         guifg=black    guibg=white
 hi Cursor        guibg=#111111
-hi LineNr        guifg=#aaaaaa  guibg=#f8f8f8
+hi LineNr        guifg=#a5a5a5  guibg=#f8f8f8
 hi Visual        guibg=#bbddff
-hi NonText       guifg=#cccccc  guibg=#fafafa
+hi NonText       guifg=#fafafa  guibg=#fafafa
 hi StatusLine    guifg=#222222  guibg=#eeeeee  gui=none
 hi StatusLineNC  guifg=#666666  guibg=#eeeeee  gui=none
 hi VertSplit     guifg=#eeeeee  guibg=#eeeeee  gui=none
 hi ModeMsg       guifg=#007050  guibg=#eeeeee  gui=none
 hi ErrorMsg      guifg=#f03050  guibg=#eeeeee  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none
+hi ColorColumn   guibg=#fafafa
 
 
 " Vim 7.x specific
@@ -49,10 +58,10 @@ hi Comment       guifg=#668866  gui=none
 hi Todo          guifg=#446644  guibg=#ddeecc  gui=italic
 hi Operator      guifg=#1a1a1a  gui=none
 hi Identifier    guifg=#1a1a1a  gui=none
-hi Statement     guifg=#0050b0  gui=none
+hi Statement     guifg=#1a1a1a  gui=none
 hi Type          guifg=#0050b0  gui=none
 hi Constant      guifg=#204070  gui=none
-hi Conditional   guifg=#006040  gui=none
+hi Conditional   guifg=#1a1a1a  gui=none
 hi Delimiter     guifg=#1a1a1a  gui=none
 hi PreProc       guifg=#007050  gui=none
 hi Special       guifg=#a05050  gui=none
