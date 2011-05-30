@@ -2,7 +2,7 @@
 " Vim colour file
 "
 " Maintainer:  Vy-Shane Sin Fat <shane@node.mu>
-" Version:     1.3
+" Version:     1.4
 "
 " This colour file is meant for GUI use.
 "
@@ -27,6 +27,7 @@ hi VertSplit     guifg=#eeeeee  guibg=#eeeeee  gui=none
 hi ModeMsg       guifg=black    guibg=#bbddff  gui=none
 hi ErrorMsg      guifg=black    guibg=#ffbbbb  gui=none
 hi Error         guifg=#bb3355  guibg=white    gui=none
+hi Folded        guifg=#999999  guibg=#fafafa
 
 
 " Vim 7.x specific
